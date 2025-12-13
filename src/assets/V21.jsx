@@ -18,7 +18,7 @@ export default function FormValidation() {
 
   return (
     <section>
-        <h2>Form using useImmer</h2>
+        <h3>V21 - Form using useImmer</h3>
       <form method="post" action=''>
         <div>
           <input type="text" value={value.fname} placeholder="First name" onChange={(e) => setValue(draft => ({ ...draft, fname: e.target.value }))} onBlur={() => setTouched(d => { d.fname = true })} />

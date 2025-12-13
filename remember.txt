@@ -1,4 +1,4 @@
-1) What is controlled component?
-=> A controlled component is a component in which there must be a form whose input fields value is controlled by react's state
-=> Benefits : Validation & Manipulation before submitting, Dynamic currently updated values
-=> Source : V21
+1) What is a controlled component?
+=> A controlled component is a component in which the form input field values are controlled by React state.
+=> Benefits: Validation & manipulation before submitting, dynamic/currently updated values
+=> Reference: V21, V22, V23

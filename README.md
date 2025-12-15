@@ -1,16 +1,40 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+`Mount - npm run dev`
 
-Currently, two official plugins are available:
+`Mount - When the component is rendered for the first time when window is loaded or refresh happens or mount the componet in DOM again such as conditional rendering (?: , &&).`
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+`Update - When the component is re-rendered due to state or props change.`
 
-## React Compiler
+`Unmount - " When the component is removed from the DOM ". in useEffect return statement is used when unmount happens.`
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```
+1) What is a controlled component?
+=> A controlled component is a component in which the form input field values are controlled by React state.
+=> Benefits: Validation & manipulation before submitting, dynamic/currently updated values
+=> Reference: V21, V22, V23
 
-## Expanding the ESLint configuration
+=> Example :
+const [name, setName] = useState("");
+<input value={name} onChange={e => setName(e.target.value)} />
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```
+2) What is the use of useEffect hook? what is side effects?
+=> To avoid side effect of re-rendering
+=> To call once per window loaded , []
+=> To use every time after re-rendering
+=> To use only when specific state or props changes , [dependencies]
+=> We can also use it to re-run something everytime when some props are changed
+=> You can use multiple useEffect in a single component.
+
+=> Always use cleanup function , like for timers, event listeners, clearInterval() etc...
+=> ex of side effects - A function that is called every time when component re-renders even we dont need to call taht function every time.
+=> Reference: V25, V28
+
+=> Example :
+useEffect(() => {
+  const id = setInterval(tick, 1000); // side effect (timer)
+  return () => clearInterval(id);     // cleanup
+}, []); // run once on mount
+```

@@ -8,10 +8,13 @@ export default function V23() {
       <h3>V23 - Radio & Select </h3>
 
       <h4>Select gender : </h4>
+
       <input type="radio" name="gen" id="male" onChange={(e)=>setGender(e.target.value)} checked={gender === "male"} value="male"/>
       <label htmlFor="male"> Male</label>
+
       <input type="radio" name="gen" id="female" onChange={(e)=>setGender(e.target.value)} checked={gender === "female"} value="female"/>
       <label htmlFor="female"> Female</label>
+      
       <p> Selected gender is : {gender} </p>
 
       <h4>Select :</h4>

@@ -8,6 +8,10 @@
 
 `Unmount - " When the component is removed from the DOM ". in useEffect return statement is used when unmount happens.`
 
+`Bootstrap - have to install react bootstrap first - npm install react-bootstrap bootstrap - see documentation at react bootstrap website.`
+
+`useRef gives you current object so always use ref.current. not ref.`
+
 ```
 1) What is a controlled component?
 => A controlled component is a component in which the form input field values are controlled by React state.

@@ -5,6 +5,7 @@ import CheckBox from "./assets/V22";
 import V23 from "./assets/V23";
 import V25 from "./assets/V25";
 import V28 from "./assets/V28";
+import V38 from "./assets/V38";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <V23 />
       <V25 />
       <V28 />
+      <V38/>
     </>
   );
 }

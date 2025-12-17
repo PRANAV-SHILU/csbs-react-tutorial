@@ -1,12 +1,7 @@
 # React + Vite
-
-`Mount - npm run dev`
-
-`Mount - When the component is rendered for the first time when window is loaded or refresh happens or mount the componet in DOM again such as conditional rendering (?: , &&).`
-
-`Update - When the component is re-rendered due to state or props change.`
-
-`Unmount - " When the component is removed from the DOM ". in useEffect return statement is used when unmount happens.`
+`forwardRef for react19`
+`useFormStatus - V41`
+`useTransition - V42`
 
 `Bootstrap - have to install react bootstrap first - npm install react-bootstrap bootstrap - see documentation at react bootstrap website.`
 
@@ -48,4 +43,16 @@ useEffect(() => {
   const id = setInterval(tick, 1000); // side effect (timer)
   return () => clearInterval(id);     // cleanup
 }, []); // run once on mount
+```
+
+```
+4)What is forward ref?
+=> forwardRef is a React function that allows you to pass a ref through a component to one of its children means one component to another component.
+=> Reference: V40
+```
+
+```
+5)What is pure component?
+=> component that does not change any value whether it is variable or dom, it just works for themselves,
+=> if there are any props passed to pure component and if those props are not changing then pure component will not re-render and gives the same output.
 ```

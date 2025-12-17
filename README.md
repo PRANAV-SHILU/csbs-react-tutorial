@@ -14,7 +14,7 @@
 
 ```
 1) What is a controlled component?
-=> A controlled component is a component in which the form input field values are controlled by React state.
+=> A controlled component is a component in which the form input field values are controlled by React "state".
 => Benefits: Validation & manipulation before submitting, dynamic/currently updated values
 => Reference: V21, V22, V23
 
@@ -24,7 +24,14 @@ const [name, setName] = useState("");
 ```
 
 ```
-2) What is the use of useEffect hook? what is side effects?
+2)What is an uncontrolled component?
+=> An uncontrolled component is a component in which the form input field values are handled by the DOM objects.
+=> Even with useRef it is still uncontrolled component because the value is not controlled by React state.
+=>Reference: V39
+```
+
+```
+3) What is the use of useEffect hook? what is side effects?
 => To avoid side effect of re-rendering
 => To call once per window loaded , []
 => To use every time after re-rendering

@@ -6,6 +6,7 @@ import V23 from "./assets/V23";
 import V25 from "./assets/V25";
 import V28 from "./assets/V28";
 import V38 from "./assets/V38";
+import V39 from "./assets/V39";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <V25 />
       <V28 />
       <V38/>
+      <V39/>
     </>
   );
 }

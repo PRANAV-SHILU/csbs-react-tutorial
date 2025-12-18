@@ -1,9 +1,10 @@
 # React + Vite
-`forwardRef for react19`
+
+`forwardRef for react19 - V40`
 `useFormStatus - V41`
 `useTransition - V42`
-
-`Bootstrap - have to install react bootstrap first - npm install react-bootstrap bootstrap - see documentation at react bootstrap website.`
+`useActionState - V48`
+`useId - V49`
 
 `useRef gives you current object so always use ref.current. not ref.`
 
@@ -55,4 +56,11 @@ useEffect(() => {
 5)What is pure component?
 => component that does not change any value whether it is variable or dom, it just works for themselves,
 => if there are any props passed to pure component and if those props are not changing then pure component will not re-render and gives the same output.
+```
+
+```
+6)What is drived state?
+=>State that is calculated or drived from other state values or props within your component
+=> drived state can be a variable
+=> drived - yes,  derived-no
 ```

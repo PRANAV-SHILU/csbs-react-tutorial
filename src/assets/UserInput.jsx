@@ -1,8 +1,8 @@
 // used in V40 
-export default function UserInput(props) {
+export default function UserInput({ ref }) {
   return (
     <div>
-      <input type="text" ref={props.ref} placeholder="Input field" />
+      <input type="text" ref={ref} placeholder="Input field" />
     </div>
   );
 }

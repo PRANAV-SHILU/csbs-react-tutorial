@@ -10,6 +10,10 @@ import V39 from "./assets/V39";
 import V40 from "./assets/V40";
 import V41 from "./assets/V41";
 import V42 from "./assets/V42";
+import V44 from "./assets/V44";
+import V46 from "./assets/V46";
+import V48 from "./assets/V48";
+import V49 from "./assets/V49";
 
 function App() {
   return (
@@ -25,6 +29,10 @@ function App() {
       <V40/>
       <V41/>
       <V42/>
+      <V44/>
+      <V46/>
+      <V48/>
+      <V49/>
     </>
   );
 }

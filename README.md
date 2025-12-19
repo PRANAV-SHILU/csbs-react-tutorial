@@ -5,6 +5,8 @@
 `useTransition - V42`
 `useActionState - V48`
 `useId - V49`
+`context API - V52`
+`custome hook - V53`
 
 `useRef gives you current object so always use ref.current. not ref.`
 

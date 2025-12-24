@@ -2,14 +2,17 @@ import { useEffect, useState } from "react";
 
 export default function V56() {
   const [userData, setUserData] = useState([]);
+  const [isLoading, setLoading] = useState(false);
 
   async function getUsersData() {
+    setLoading(true);
     const url = "https://dummyjson.com/users";
     let response = await fetch(url);
     response = await response.json();
     setUserData(response.users);
+    setLoading(false);
   }
-  
+
   useEffect(() => {
     getUsersData();
   }, []);
@@ -26,14 +29,18 @@ export default function V56() {
             <th>Lastname</th>
             <th>Age</th>
           </tr>
-          {userData &&
+          {!isLoading ? (
+            userData &&
             userData.map((user) => (
               <tr key={user.id}>
                 <td>{user.firstName}</td>
                 <td>{user.lastName}</td>
                 <td>{user.age}</td>
               </tr>
-            ))}
+            ))
+          ) : (
+            <h1>No internet</h1>
+          )}
         </tbody>
       </table>
     </section>

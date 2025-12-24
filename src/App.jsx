@@ -17,6 +17,7 @@ import V49 from "./assets/V49";
 import V52 from "./assets/V52";
 import V53 from "./assets/V53";
 import V56 from "./assets/V56";
+import V58 from "./assets/V58";
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
       <V52/>
       <V53/>
       <V56/>
+      <V58/>
     </>
   );
 }

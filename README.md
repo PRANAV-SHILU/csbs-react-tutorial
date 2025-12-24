@@ -5,6 +5,8 @@
 `useTransition - V42`
 `useActionState - V48`
 `useId - V49`
+`useNavigate V59 - router`
+`useParams V62Edit - router`
 `context API - V52`
 `custome hook - V53`
 

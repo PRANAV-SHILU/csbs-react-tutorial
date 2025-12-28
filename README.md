@@ -1,5 +1,4 @@
-# React + Vite
-
+`References : `
 `forwardRef for react19 - V40`
 `useFormStatus - V41`
 `useTransition - V42`
@@ -9,6 +8,7 @@
 `useParams V62Edit - router`
 `context API - V52`
 `custome hook - V53`
+`useReducer - V67 - use when you need multiple useState - esspecially in form inputs`
 
 `useRef gives you current object so always use ref.current. not ref.`
 

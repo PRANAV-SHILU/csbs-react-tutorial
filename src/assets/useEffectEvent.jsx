@@ -8,10 +8,13 @@ export default function UseEffectEvent() {
   });
 
   useEffect(() => {
+    
     const interval = setInterval(() => {
       countControl();
     }, 1000);
+
     console.log("useeffectevent " + interval);
+
     return () => clearInterval(interval);
   }, []);
 

@@ -2,6 +2,7 @@ import { useState, Activity } from "react";
 
 export default function ActivityEx() {
   const [showHome, setShowHome] = useState(true);
+
   return (
     <section>
       <h2>React 19.2 - Activity</h2>

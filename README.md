@@ -9,11 +9,11 @@
 `context API - V52`
 `custome hook - V53`
 `useReducer - V67 - use when you need multiple useState - esspecially in form inputs`
+`useEffectEvent`
 
 `useRef gives you current object so always use ref.current. not ref.`
 
 `API - Application Programming Interface - from V56`
-
 
 ```
 1) What is a controlled component?

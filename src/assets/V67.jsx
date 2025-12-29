@@ -9,7 +9,7 @@ const emptyData = {
 };
 
 const reducer = (data, action) => {
-  return {...data, [action.type]:action.val}
+  return { ...data, [action.type]: action.val };
 };
 
 export default function V67() {

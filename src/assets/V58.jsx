@@ -4,10 +4,6 @@ export default function V58() {
   const [usersData, setUsersData] = useState([]);
   const [isLoading, setLoading] = useState(false);
 
-  useEffect(() => {
-    getUsersData();
-  }, []);
-
   async function getUsersData() {
     setLoading(true);
     let url = "http://localhost:3000/users";
@@ -16,11 +12,15 @@ export default function V58() {
     setUsersData(response);
     setLoading(false);
   }
+
+  useEffect(() => {
+    getUsersData();
+  }, []);
   return (
     <section>
       <h2>V58 - integrated selfmade API and loader</h2>
 
-      <table cellSpacing='25px'>
+      <table cellSpacing="25px">
         <tr>
           <th>ID</th>
           <th>NAME</th>

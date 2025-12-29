@@ -14,6 +14,7 @@
 
 `API - Application Programming Interface - from V56`
 
+
 ```
 1) What is a controlled component?
 => A controlled component is a component in which the form input field values are controlled by React "state".
